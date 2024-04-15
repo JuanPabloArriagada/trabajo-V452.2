@@ -268,11 +268,14 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     padding: 0 1rem;
 }
 .empire-featured {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
     justify-content: space-between;
     gap: 2rem;
     margin-bottom: 3rem;
+    
 }
 .empire-featured-item {
     padding: 1rem;
@@ -730,7 +733,8 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     margin-bottom: 3rem;
 }
 .empire-category-nav-list {
-    gap: 1rem
+    overflow-x: auto;
+    gap: 1rem;
 }
 .empire-category-nav-list__item {
     padding: 0.5rem;
@@ -768,6 +772,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     margin-bottom: 3rem
 }
 .empire-products-content {
+    flex-wrap: wrap;
     justify-content: flex-start;
     max-width: 1200px;
     gap: 1rem;
