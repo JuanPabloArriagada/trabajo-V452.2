@@ -34,13 +34,13 @@
         </section>
         <section class="empire-header-container">
             <div class="empire-header-logo">
-                <img class="empire-header-logo__img" src="assets/images/logo-empire-01.png"
+                <img class="empire-header-logo__img" src="/assets/images/logo-empire-01.png"
                 alt="Logo Empire">
             </div>
             <nav class="empire-menu">
                 <ul class="empire-menu-nav">
                     <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link active" href="/">Home</a>
+                        <a class="empire-menu-nav__link" href="/">Home</a>
                     </li>
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link" href="/pages/products.html">Productos</a>
@@ -58,11 +58,13 @@
             </nav>
             <div class="empire-menu-cart">
                 <a href="" class="empire-menu-cart__link">
-                    <img class="empire-menu-cart__img" src="assets/images/icon-search.svg" alt="Icono Búsqueda">
+                    <img class="empire-menu-cart__img" src="/assets/images/icon-search.svg" alt="Icono Búsqueda">
                 </a>
                 <a href="pages/carrito.html" class="empire-menu-cart__link">
-                    <img class="empire-menu-cart__img" src="assets/images/icon-carrito.svg" alt="Icono Carrito de Compra">
+                    <img class="empire-menu-cart__img" src="/assets/images/icon-carrito.svg" alt="Icono Carrito de Compra">
                 </a>
+                <a href="" class="empire-menu-cart__link">
+                    <img class="empire-menu-cart__img" src="/assets/images/icon-user.svg" alt="Icono Usuario">
                 <a href="/pages/dashboard/index.html">
                     <img class="empire-menu-cart__img" src="assets/images/icon-user.svg" alt="Icono Usuario">
                 </a>
@@ -70,37 +72,90 @@
         </section>
     </header>
     
-    <main>
-        <section class="cart-items">
-            <div class="cart-item">
-                <img src="assets/images/product1.jpg" alt="Product 1">
-                <div class="item-details">
-                    <h2>Nombre del Producto 1</h2>
-                    <p>Precio: $XX.</p>
-                    <p>Cantidad: 1</p>
-                    <button class="remove-btn">Eliminar</button>
+
+
+
+
+
+    
+    <main class="empire-main">
+        
+    <div class="empire-cart">
+        <h1>Carrito de Compra</h1>
+        <div class="empire-cart-item">
+            <img src="/assets/images/apple-2022-macbook-air-m2.png" alt="Product 1">
+            <div class="empire-cart-item-details">
+                <h2>Mackbook Air m2</h2>
+                <p>Precio: $1.490.990</p>
+                <p>Cantidad: 1</p>
+                <div>
+                    <button><img src="/assets/images/trash-can-icon-symbol-illustration-vector.jpg" alt="" width="20px"></button>
                 </div>
             </div>
-            <div class="cart-item">
-                <img src="assets/images/product2.jpg" alt="Product 2">
-                <div class="item-details">
-                    <h2>Nombre del Producto 2</h2>
-                    <p>Precio: $XX.XX</p>
-                    <p>Cantidad: 2</p>
-                    <button class="remove-btn">Eliminar</button>
+        </div>
+        <div class="empire-cart-item">
+            <img src="/assets/images/apple-watch-series-7.png" alt="Product 2">
+            <div class="empire-cart-item-details">
+                <h2>Apple Watch Series 7</h2>
+                <p>Precio: $249.990</p>
+                <p>Cantidad: 1</p>
+                <div>
+                    <button><img src="/assets/images/trash-can-icon-symbol-illustration-vector.jpg" alt="" width="20px"></button>
                 </div>
             </div>
-            <!-- Otros elementos del carrito de compras -->
-        </section>
-        <section class="cart-summary">
-            <h2>Resumen del Carrito</h2>
-            <p>Total de Artículos: X</p>
-            <p>Total a Pagar: $XX.XX</p>
-            <button class="checkout-btn">Pagar</button>
-        </section>
+        </div>
+        <div class="empire-cart-item">
+            <img src="/assets/images/camera-image.png" alt="Product 3">
+            <div class="empire-cart-item-details">
+                <h2>Camera</h2>
+                <p>Precio: $99.990</p>
+                <p>Cantidad: 1</p>
+                <div>
+                    <button><img src="/assets/images/trash-can-icon-symbol-illustration-vector.jpg" alt="" width="20px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="empire-cart-total">
+            <h2>Total: $1.840.970</h2>
+            <button>Realizar Pago</button>
+        </div>
+    </div>
+
     </main>
-    <footer>
-        <p>&copy; 2024 Empire Electronics. Todos los derechos reservados.</p>
+
+
+
+
+
+
+
+
+
+    <footer class="empire-footer">
+        <div class="empire-footer-container">
+            <div class="empire-footer-info">
+                <h3 class="empire-footer-info__title">Company</h3>
+                <a class="empire-footer-info__link" href="/">Home</a>
+                <a class="empire-footer-info__link" href="/pages/products.html">Productos</a>
+                <a class="empire-footer-info__link" href="/pages/blog.html">Blog</a>
+                <a class="empire-footer-info__link" href="/pages/contact.html">Contacto</a>
+            </div>
+            <div class="empire-footer-info">
+                <h3 class="empire-footer-info__title">Info</h3>
+                <a class="empire-footer-info__link" href="/pages/works.html">Trabaja con nosotros</a>
+                <a class="empire-footer-info__link" href="/pages/blog.html">Nuestra promesa</a>
+                <a class="empire-footer-info__link" href="/pages/faq.html">FAQ</a>
+            </div>
+            <div class="empire-footer-info">
+                <h3 class="empire-footer-info__title">Contáctanos</h3>
+                <p class="empire-footer-info__desc">
+                    <img src="/assets/images/footer/footer-icon-location.svg" alt="Icon Location Footer"/>
+                    Mall Plaza del Trébol, Talcahuano</p>
+                <p class="empire-footer-info__desc"><img src="/assets/images/footer/footer-icon-email.svg" alt="Icon Email"> info@empire-electronics.cl</p>
+                <p class="empire-footer-info__desc"><img src="/assets/images/footer/footer-icon-phone.svg" alt="Icon Phone">+569 987654321</p>
+            </div>
+        </div>
+
     </footer>
 </body>
 

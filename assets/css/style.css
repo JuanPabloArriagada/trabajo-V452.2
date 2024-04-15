@@ -993,3 +993,37 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     border: 2px solid var(--color-blue);
     color: var(--color-blue);
 }
+
+.empire-cart {
+    margin: 20px; /* Añadir un margen para separar del borde del navegador */
+}
+.empire-cart h1 {
+    text-align: left; /* Alinear el título a la izquierda */
+}
+.empire-cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre elementos */
+}
+.empire-cart-item img {
+    max-width: 100px; /* Limitar el ancho de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y los detalles */
+}
+.empire-cart-total {
+    text-align: right; /* Alinear el total a la izquierda */
+}
+
+
+/* Estilos para el botón de pago */
+.empire-cart-total button {
+    padding: 10px 20px; /* Ajustar el padding */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Quitar el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave */
+}
+.empire-cart-total button:hover {
+    background-color: #45a049; /* Cambiar color de fondo al pasar por encima */
+}
