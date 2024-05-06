@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login</title>
+	<title>Crear Cuenta</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/sweetalert2.css">
 	<link rel="stylesheet" href="css/material.min.css">
@@ -22,15 +21,18 @@
 
 <body class="cover">
 	<div class="container-login">
-		<p class="text-center" style="font-size: 80px;">
-			<i class="zmdi zmdi-account-circle"></i>
-		</p>
-		<p class="text-center text-condensedLight">Ingresa con tu Cuenta</p>
-		<form class="needs-validation" action="home.html">
+		
+		<h3 class="text-center text-condensedLight">¡Bienvenido! <br> Creemos tu cuenta</h3>
+		<form class="needs-validation" action="index.html">
+
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="email" id="email" required>
+				<label class="mdl-textfield__label" for="email" >Correo electronico</label>
+			</div>
 
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 				<input class="mdl-textfield__input" type="text" id="userName" required>
-				<label class="mdl-textfield__label" for="userName" >Nombre de Usuario</label>
+				<label class="mdl-textfield__label" for="userName" >Nombre de usuario </label>
 			</div>
 
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -38,14 +40,19 @@
 				<label class="mdl-textfield__label" for="pass">Contraseña</label>
 			</div>
 
-			<button style="color: #3F51B5; float:left;">
-				<a href="/index.html" style="color: #3F51B5;"> Volver</a> 
-			</button>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="password" id="pass2" required>
+				<label class="mdl-textfield__label" for="pass">Reingresa la contraseña</label>
+			</div>
+
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+				<label class="form-check-label" for="myCheck">Acepto las condiciones de cuenta.</label>
 
 			<button style="float:right" type="submit" class="btn btn-primary">
-				Ingresar</button>
+				Aceptar</button>
 			<br><br><br>
-			<a href="login.html" class="link" style="color:cornflowerblue;"> Necesito registrarme</a>
+			<a href="index.html" class="link" style="color:cornflowerblue;"> Ya tengo una cuenta</a>
 		</form>
 		
 		</div>
