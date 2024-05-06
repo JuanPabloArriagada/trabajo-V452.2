@@ -96,6 +96,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     justify-content: center;
     align-items: center;
 }
+
 /*** HEADER ***/
 .empire-header {
     position: relative;
@@ -143,6 +144,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     gap: 1rem
 }
 .empire-header-container {
+    flex: auto;
     justify-content: space-between;
     height: 80px;
     padding: 0 1rem;
@@ -169,7 +171,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     justify-content: space-between;
     width: 100%;
     gap: 0.5rem;
-    list-style: none
+    list-style: none;
 }
 .empire-menu-nav__list {
     width: 100%;
@@ -263,16 +265,17 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 /** MAIN **/
 .empire-main {
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1300px; 
     margin: 0 auto;
     padding: 0 1rem;
 }
 .empire-featured {
     width: 100%;
-    max-width: 1200px;
-    justify-content: space-between;
-    gap: 2rem;
+    max-width: 1300px;
+    justify-content: center;
+    gap: 1rem;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 .empire-featured-item {
     padding: 1rem;
@@ -303,7 +306,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     background-size: cover;
     height: 320px;
     border-radius: 0.5rem;
-    padding: 2rem 0rem 1rem 1rem;
+    padding: 2rem 3rem 1rem 1rem;
     gap: 1rem;
     margin-bottom: 3rem;
 }
@@ -730,7 +733,8 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     margin-bottom: 3rem;
 }
 .empire-category-nav-list {
-    gap: 1rem
+    overflow-x: auto;
+    gap: 1rem;
 }
 .empire-category-nav-list__item {
     padding: 0.5rem;
@@ -768,11 +772,11 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     margin-bottom: 3rem
 }
 .empire-products-content {
-    justify-content: flex-start;
     max-width: 1200px;
     gap: 1rem;
-    overflow-x: scroll;
+    overflow-x: auto;
     padding: 1rem 1rem 2rem;
+
 }
 .empire-products-content-body__item {
     box-shadow: var(--box-shadow);
@@ -901,10 +905,28 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 /*******   DETAILS *********/
 .empire-details {
     width: 100%;
+    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1rem;
 }
+@media (max-width: 600px) {
+    .empire-details {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .empire-details {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+@media (min-width: 901px) {
+}
+
 .empire-details-products,
 .empire-details-products-item,
 .empire-details-products-value {
@@ -994,36 +1016,88 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     color: var(--color-blue);
 }
 
+/* Carrito de compras */
 .empire-cart {
-    margin: 20px; /* Añadir un margen para separar del borde del navegador */
+    width: 100%;
+    margin: 20px;   
+    padding: 3rem;
 }
-.empire-cart h1 {
-    text-align: left; /* Alinear el título a la izquierda */
-}
+
 .empire-cart-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; /* Espacio entre elementos */
+    width: 330px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.empire-cart-item h2{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.empire-cart-item h1{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.empire-cart-item h1, p{
+    width: 250px;
+    justify-content: flex-start;
 }
 .empire-cart-item img {
-    max-width: 100px; /* Limitar el ancho de la imagen */
-    margin-right: 20px; /* Espacio entre la imagen y los detalles */
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background-color: #45a049;
 }
+.empire-cart-d{
+    justify-content: flex-end;
+}
+.empire-cart-d img{
+    width: 20px;
+    height: 20px;
+
+}
+
+
 .empire-cart-total {
-    text-align: right; /* Alinear el total a la izquierda */
+    text-align: right;
+}
+
+.empire-cart-item-details{
+    text-align: right;
 }
 
 
 /* Estilos para el botón de pago */
 .empire-cart-total button {
-    padding: 10px 20px; /* Ajustar el padding */
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Quitar el borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar el cursor al pasar por encima */
-    transition: background-color 0.3s; /* Transición suave */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 .empire-cart-total button:hover {
     background-color: #45a049; /* Cambiar color de fondo al pasar por encima */
+}
+
+.empire-order-container{
+    border: 1px black solid;
+    max-width: 1200px;
+    margin: 20px;
+}
+.empire-card-date-order{
+    font-size: 24px;
+    height: 50px;
+    padding: 5px;
+    background-color:#eeeeee;
+}
+.inline{
+    display: inline;
 }

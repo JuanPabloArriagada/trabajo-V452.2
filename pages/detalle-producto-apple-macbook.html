@@ -59,23 +59,23 @@
                 <ul class="empire-menu-nav">
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link"
-                            href="/">Home</a>
+                            href="../index.html">Home</a>
                     </li>
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link active"
-                            href="/pages/products.html">Productos</a>
+                            href="../pages/products.html">Productos</a>
                     </li>
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link"
-                            href="/pages/blog.html">Blog</a>
+                            href="../pages/blog.html">Blog</a>
                     </li>
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link"
-                            href="/pages/about.html">Nosotros</a>
+                            href="../pages/about.html">Nosotros</a>
                     </li>
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link"
-                            href="/pages/contact.html">Contáctanos</a>
+                            href="../pages/contact.html">Contáctanos</a>
                     </li>
                 </ul>
             </nav>
@@ -120,7 +120,7 @@
         </nav>
         <section class="empire-details">
             <div class="empire-details-products">
-                <img class="empire-details-products__img" src="/assets/images/products/laptops/01-macbook-air-15.png" alt="MacBook Pro M2 MNEJ3 2022 LLA 13.3 inc">
+                <img class="empire-details-products__img" src="../assets/images/products/laptops/01-macbook-air-15.png" alt="MacBook Pro M2 MNEJ3 2022 LLA 13.3 inc">
             </div>
             <div class="empire-details-products-item">
                 <h3 class="empire-details-products-item__title">MacBook Pro M2 MNEJ3 2022 LLA 13.3 inch</h3>
@@ -136,12 +136,45 @@
                 <h2 class="empire-details-products-value__price">$ 1.299</h2>
                 <span class="empire-details-products-value__last-price">$ 1.699</span>
                 <div class="empire-details-products-value-btn">
-                    <button class="empire-details-products-value-btn--add"> Comprar</button>
-                    <button class="empire-details-products-value-btn--cart"> Agregar al carrito</button>
+                    <a href="tarjeta.html">
+                        <button class="empire-details-products-value-btn--add"> Comprar</button>
+                    </a>
+                    
+                    <!-- SIMULACION DE CARRITO DE COMPRAS -->
+                    <a href="carrito.html">
+                        <button class="empire-details-products-value-btn--cart"> Agregar al carrito</button>
+                    </a>
+                    
                 </div>
 
             </div>
         </section>
     </main>
+    <footer class="empire-footer">
+        <div class="empire-footer-container">
+            <div class="empire-footer-info">
+                <h3 class="empire-footer-info__title">Company</h3>
+                <a class="empire-footer-info__link" href="../index.html">Home</a>
+                <a class="empire-footer-info__link" href="../pages/products.html">Productos</a>
+                <a class="empire-footer-info__link" href="../pages/blog.html">Blog</a>
+                <a class="empire-footer-info__link" href="../pages/contact.html">Contacto</a>
+            </div>
+            <div class="empire-footer-info">
+                <h3 class="empire-footer-info__title">Info</h3>
+                <a class="empire-footer-info__link" href="../pages/works.html">Trabaja con nosotros</a>
+                <a class="empire-footer-info__link" href="../pages/blog.html">Nuestra promesa</a>
+                <a class="empire-footer-info__link" href="../pages/faq.html">FAQ</a>
+            </div>
+            <div class="empire-footer-info">
+                <h3 class="empire-footer-info__title">Contáctanos</h3>
+                <p class="empire-footer-info__desc">
+                    <img src="/assets/images/footer/footer-icon-location.svg" alt="Icon Location Footer"/>
+                    Mall Plaza del Trébol, Talcahuano</p>
+                <p class="empire-footer-info__desc"><img src="../assets/images/footer/footer-icon-email.svg" alt="Icon Email"> info@empire-electronics.cl</p>
+                <p class="empire-footer-info__desc"><img src="../assets/images/footer/footer-icon-phone.svg" alt="Icon Phone">+569 987654321</p>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>
