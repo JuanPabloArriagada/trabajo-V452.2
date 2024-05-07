@@ -12,6 +12,7 @@
     --font-primary: "Inter", sans-serif;
     --transition: all 0.3s ease;
     --box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    --box-shadow-2: rgb(39 39 94 / 15%) 0 100px 50px 100px, rgb(39 39 94 / 15%) 0 100px 50px 100px
 }
 * {
     /* outline: 1px solid blue; */
@@ -143,11 +144,15 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 .empire-header-call-rrss {
     gap: 1rem
 }
+.empire-header-call-rrss__phone {
+    min-width:200px
+}
 .empire-header-container {
     flex: auto;
     justify-content: space-between;
     height: 80px;
     padding: 0 1rem;
+    position: relative;
 }
 .empire-header-logo {
     justify-content: flex-start;
@@ -231,7 +236,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     border-bottom: 2px solid var(--color-blue);
 }
 .empire-menu-cart__img {
-    width: 1.5rem;
+    width: 2rem;
 }
 /** BREADCRUMBS **/
 .empire-breadcrumbs {
@@ -265,17 +270,17 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 /** MAIN **/
 .empire-main {
     flex-direction: column;
-    max-width: 1300px; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 .empire-featured {
     width: 100%;
-    max-width: 1300px;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
     margin-bottom: 3rem;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 .empire-featured-item {
     padding: 1rem;
@@ -286,6 +291,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     border: 1px solid transparent;
     transition: var(--transition);
     text-decoration: none;
+    min-height: 190px;
 }
 .empire-featured-item:hover {
     border: 1px solid var(--color-black);
@@ -293,6 +299,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 }
 .empire-featured-item__img {
     width: 100%;
+    max-width: 140px;
 }
 .empire-featured-item__title {
     font: normal 400 1rem/1.2 var(--font-primary);
@@ -1019,7 +1026,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 /* Carrito de compras */
 .empire-cart {
     width: 100%;
-    margin: 20px;   
+    margin: 20px;
     padding: 3rem;
 }
 
@@ -1041,10 +1048,6 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     font-weight:bold;
 }
 
-.empire-cart-item h1, p{
-    width: 250px;
-    justify-content: flex-start;
-}
 .empire-cart-item img {
     width: 100%;
     max-width: 300px;
@@ -1060,14 +1063,10 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 .empire-cart-d img{
     width: 20px;
     height: 20px;
-
 }
-
-
 .empire-cart-total {
     text-align: right;
 }
-
 .empire-cart-item-details{
     text-align: right;
 }
@@ -1101,3 +1100,180 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
 .inline{
     display: inline;
 }
+
+
+/** USUARIO **/
+
+/** Registro**/
+
+/** CARRITO **/
+.cart--number {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+}
+
+.empire-cart__number {
+    font: normal 400 0.75rem/1.1 var(--font-primary);
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    text-align: center;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    padding: 0.25rem;
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+.empire-cart__number:hover {
+    cursor: pointer;
+}
+
+.empire-menu-cart__link.cart--number .empire-cart-container {
+    display: none
+}
+.empire-menu-cart__link.cart--number {
+    border-bottom: none;
+}
+.empire-menu-cart__link.cart--number:hover {
+    cursor: default;
+    background-color: #fff;
+    border-bottom: none;
+}
+.cart--number:hover .empire-cart-container{
+    display: flex;
+}
+.empire-cart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-2);
+    transition: all 0.3s ease;
+}
+.empire-cart-container .empire-details-products__img {
+    max-width: 150px;
+}
+.empire-cart-container .empire-details-products-item__title {
+    font-size: 14px;
+}
+.empire-cart-container .empire-details-products-item-list__item {
+    margin-bottom: 0.25rem;
+    font-size: 12px;
+}
+.empire-cart-container .empire-details-products-item-list {
+    padding-left: 0;
+}
+.empire-details-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+.empire-details-content .empire-details {
+    border-bottom: 1px solid var(--color-gray-lighter);
+}
+.empire-details-content .empire-details:last-child {
+    border-bottom: none;
+}
+
+.empire-details-products-value {
+    max-width: 300px;
+    margin: 1rem;
+}
+
+/** REGISTRO **/
+.empire-registro-container{
+    background-color: var(--color-blue);
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.empire-registro{
+    display: flex;
+}
+.empire-registro-persona{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #4CAF50;
+    padding: 0.25rem;
+    margin: 1rem;
+}
+.empire-registro-head{
+    
+}
+
+/** MEDIA QUERIES **/
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 768px) {
+    .empire-header-call-attention {
+        display: none;
+    }
+    .empire-featured {
+        overflow-x: scroll;
+        padding-bottom: 1rem;
+    }
+    .empire-cart-container {
+        flex-direction: column;
+        z-index: 1;
+    }
+    .empire-details-content {
+        width: 100%;
+    }
+    .empire-details-content  .empire-details-products__img {
+        max-width: 4rem;
+    }
+    .empire-details-content  .empire-details-products-item__title {
+        font-weight: 700;
+    }
+    .empire-details-content  .empire-details-products {
+        max-width: 80px;
+    }
+    .empire-details-price  .empire-details-products-value {
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .empire-details-content .empire-details {
+        flex-direction: row;
+    }
+}
+@media (max-width: 575px) {
+    .empire-header-call-city {
+        display: none;
+    }
+    .empire-header-call-rrss {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .empire-header-call-rrss__phone {
+        width: 100%;
+    }
+    .empire-header-call-rrss__icon:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .empire-registro{
+        flex-direction: column;
+    }
+    .empire-registro-persona{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+
