@@ -1,18 +1,19 @@
+document.addEventListener("DOMContentLoaded",function(){
 const body = document.querySelector('body');
-const tbody = document.querySelector('tbody')
-const btnAdd = document.querySelector("#btn-addProduct")
-const Nombre = document.querySelector("#Nombre")
-const Categoria = document.querySelector("#Categoria")
-const Unidades = document.querySelector("#Unidades")
-const Precio = document.querySelector("#Precio")
-const Descuento = document.querySelector("#Descuento")
-const Proveedor = document.querySelector("#Proveedor")
-const Modelo = document.querySelector("#Modelo")
-const Marca = document.querySelector("#Marca")
+const tbody = document.querySelector('tbody');
+const btnAdd = document.querySelector("#btnaddProduct");
+const Nombre = document.querySelector("#Nombre");
+const Categoria = document.querySelector("#Categoria");
+const Unidades = document.querySelector("#Unidades");
+const Precio = document.querySelector("#Precio");
+const Descuento = document.querySelector("#Descuento");
+const Proveedor = document.querySelector("#Proveedor");
+const Modelo = document.querySelector("#Modelo");
+const Marca = document.querySelector("#Marca");
 
 
 
-btnAdd.onclick = btnAddProducto
+btnAdd.onclick = btnAddProducto;
 
 body.onload = () => {
     fillTable()
@@ -84,12 +85,12 @@ function createRow(p, i){
 }
 
 function btnAddProducto(e){
-    const i = getProducts().length
+    const i = getProducts().length;
     const newProduct = createProduct(Nombre.value, Categoria.value, Unidades.value, Precio.value, Descuento.value, Proveedor.value, Modelo.value, Marca.value)
     const tr = createRow(newProduct, i)
-    tbody.appendChild(tr)
-    e.preventDefault()
-    alert("Producto guardado")
+    tbody.appendChild(tr);
+    e.preventDefault();
+    alert("Producto guardado");
 }
 
 function btnUpdateProduct(e, i){
@@ -98,7 +99,7 @@ function btnUpdateProduct(e, i){
     fillTable()
     e.preventDefault()
     alert("Producto actualizado")
-    Nombre.value = '' 
+    /*Nombre.value = '' 
     Categoria.value = '' 
     Unidades.value = '' 
     Precio.value = ''
@@ -107,7 +108,7 @@ function btnUpdateProduct(e, i){
     Modelo.value = ''
     Marca.value = ''
     btnAdd.textContent = 'Agregar'
-    btnAdd.onclick = btnAddProducto
+    btnAdd.onclick = btnAddProducto*/
 }
 
 function clearTable(){
@@ -124,3 +125,4 @@ function fillTable(){
             //Join tbody
             tbody.append(...trs)
 }
+});

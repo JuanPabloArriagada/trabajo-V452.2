@@ -39,11 +39,13 @@
 				<input class="mdl-textfield__input" type="password" id="pass" required>
 				<label class="mdl-textfield__label" for="pass">Contraseña</label>
 			</div>
-
+			
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 				<input class="mdl-textfield__input" type="password" id="pass2" required>
-				<label class="mdl-textfield__label" for="pass">Reingresa la contraseña</label>
+				<label class="mdl-textfield__label" for="pass2">Reingresa la contraseña</label>
+				<p id="error-msg" class="formulario__input-error" style="display:none;">Ambas contraseñas deben ser iguales.</p>
 			</div>
+
 
 			<div class="form-check mb-3">
 				<input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
@@ -57,6 +59,7 @@
 		
 		</div>
 	</div>
+	<script src="js/login.js"></script>
 </body>
 
 </html>
