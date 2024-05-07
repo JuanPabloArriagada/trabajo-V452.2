@@ -1224,7 +1224,7 @@ h1,h2,h3,h4,h5,h6, a, p, span, textarea {
     width: 100%;
     max-width: 300px;
     background-color: var(--color-white);
-    box-shadow: rgb(39 39 94 / 15%) 0 5px 20px 20px, rgb(39 39 94 / 15%) 0 0px 49px 60px;
+    box-shadow: rgb(39 39 94 / 15%) 0 5px 20px 20px, rgb(39 39 94 / 15%) 0 5px 20px 20px, rgb(39 39 94 / 15%) 0 0px 49px 60px;
     transition: all 0.3s ease;
     padding: 1rem;
     border-radius: 0.25rem;
