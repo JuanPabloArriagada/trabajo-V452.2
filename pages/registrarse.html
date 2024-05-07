@@ -48,7 +48,7 @@
             <nav class="empire-menu">
                 <ul class="empire-menu-nav">
                     <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link active" href="#">Home</a>
+                        <a class="empire-menu-nav__link" href="../index.html">Home</a>
                     </li>
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link" href="../pages/products.html">Productos</a>
@@ -62,9 +62,9 @@
                     <li class="empire-menu-nav__list">
                         <a class="empire-menu-nav__link" href="../pages/contact.html">Contáctanos</a>
                     </li>
-                    <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link" href="../pages/pedidos.html">Pedidos</a>
-                    </li>
+                    <!-- <li class="empire-menu-nav__list">
+                        <a class="empire-menu-nav__link" href="pages/pedidos.html">Pedidos</a>
+                    </li> -->
                 </ul>
             </nav>
             <div class="empire-menu-cart">
@@ -94,8 +94,7 @@
                                         inch</h3>
                                     <ul class="empire-details-products-item-list">
                                         <li class="empire-details-products-item-list__item">
-                                            <span>Marca</span><strong>Apple</strong>
-                                        </li>
+                                            <span>Marca</span><strong>Apple</strong></li>
                                     </ul>
                                 </div>
                             </div>
@@ -111,8 +110,7 @@
                                         inch</h3>
                                     <ul class="empire-details-products-item-list">
                                         <li class="empire-details-products-item-list__item">
-                                            <span>Marca</span><strong>Apple</strong>
-                                        </li>
+                                            <span>Marca</span><strong>Apple</strong></li>
                                     </ul>
                                 </div>
                             </div>
@@ -128,8 +126,7 @@
                                         inch</h3>
                                     <ul class="empire-details-products-item-list">
                                         <li class="empire-details-products-item-list__item">
-                                            <span>Marca</span><strong>Apple</strong>
-                                        </li>
+                                            <span>Marca</span><strong>Apple</strong></li>
                                     </ul>
                                 </div>
                             </div>
@@ -154,10 +151,23 @@
 
                 <a id="empire-usuario" class="empire-menu-cart__link usuario">
                     <img class="empire-menu-cart__img" src="../assets/images/icon-user.svg" alt="Icono Usuario">
-                    <div id="empire-usuario-container" class="empire-usuario-container">
-
-                    </div>
                 </a>
+                <div id="empire-usuario-container" class="empire-usuario-container">
+                    <div class="empire-usuario-login">
+                        <label>Rut</label>
+                        <input class="empire-usuario-login-input" type="text" placeholder="12345678-9" required>
+                        <label>Contraseña</label>
+                        <input class="empire-usuario-login-input" type="password" placeholder="***********" required>
+                    </div>
+                        
+                    <a href="">¿Olvidaste la contraseña?</a>
+                    <a href="index.html">
+                        <button id="btn-Login" class="empire-btn-login">Iniciar sesión</button>
+                    </a>
+                    <a href="pages/registrarse.html">
+                        <button class="empire-btn-registro">Crear cuenta</button>
+                    </a>
+                </div>
 
 
             </div>
@@ -207,7 +217,7 @@
                 <div class="empire-registro-persona">
                     <label>Rut *
                         <span>Sin puntos ni guión</span></label>
-                    <input class="form-control" type="text" id="rut_cliente" name="rut_cliente" placeholder="Ingresa tu Rut" maxlength="10" required>
+                    <input class="form-control" type="text" id="rut_cliente" name="rut_cliente" placeholder="Ingresa tu Rut" minlength="9" maxlength="10" required>
                     <div id="id_lbl_rut" class="form-error form-error--active link link--sm link--bold color-alert" style="display:none">El campo es obligatorio</div>
                 </div>
                 <div class="empire-registro-persona">
@@ -284,7 +294,9 @@
                     <div id="id_lbl_contraseñaV" class="form-error form-error--active link link--sm link--bold color-alert" style="display:none">El campo es obligatorio</div>
                 </div>
             </section>
-            <input type="submit">
+            <a  href="index.html">
+                <button class="empire-registro-form">Registrarse</button>
+            </a>
 
         </form>
 

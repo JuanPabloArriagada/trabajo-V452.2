@@ -15,10 +15,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // Agregar evento de clic a la numberCart
     numberCart.addEventListener("click", toggleContenedor);
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var numberCart = document.getElementById("empire-usuario");
+    var contenedorCart = document.getElementById("empire-usuario-container");
+    // Función para mostrar u ocultar el contenedor
+    function toggleContenedor() {
+        if (contenedorCart.style.display === "none") {
+            contenedorCart.style.display = "flex";
+        } else {
+            contenedorCart.style.display = "none";
+        }
+    }
+    // Ocultar el contenedor al cargar la página
+    contenedorCart.style.display = "none";
+
+    // Agregar evento de clic a la numberCart
+    numberCart.addEventListener("click", toggleContenedor);
+});
+
+
+
 
 // Función para cargar las comunas desde el archivo JSON
 // Ruta del archivo JSON
-const jsonUrl = '../assets/json/chile_comunas.json';
+const jsonUrl = 'https://gist.github.com/juanbrujo/0fd2f4d126b3ce5a95a7dd1f28b3d8dd?permalink_comment_id=4161463#gistcomment-4161463';
 
 // Función para cargar el JSON y llenar el select
 function loadCommunes() {

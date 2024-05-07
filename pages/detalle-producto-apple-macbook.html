@@ -3,18 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empire Electronics | Todo lo que necesitas para tu PC</title>
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/app.js"></script>
 </head>
 
 <body>
@@ -30,106 +25,187 @@
                         Talcahuano</p>
                 </div>
                 <div class="empire-header-call-rrss">
-                    <a class="empire-header-call-rrss__phone"
-                        href="tel:+569 123 456 789">
+                    <a class="empire-header-call-rrss__phone" href="tel:+569 123 456 789">
                         <strong>Llámanos al +569 123 456 789</strong>
                     </a>
-                    <a class="empire-header-call-rrss__icon"
-                        href="https:www.facebook.com"
-                        target="_blank">
-                        <img src="../assets/images/icon-facebook.svg"
-                            alt="Logo Facebook">
+                    <a class="empire-header-call-rrss__icon" href="https:www.facebook.com" target="_blank">
+                        <img src="../assets/images/icon-facebook.svg" alt="Logo Facebook">
                     </a>
-                    <a class="empire-header-call-rrss__icon"
-                        href="https:www.facebook.com"
-                        target="_blank">
-                        <img src="../assets/images/icon-instagram.svg"
-                            alt="Logo Instagram">
+                    <a class="empire-header-call-rrss__icon" href="https:www.instagram.com" target="_blank">
+                        <img src="../assets/images/icon-instagram.svg" alt="Logo Instagram">
                     </a>
                 </div>
             </div>
         </section>
         <section class="empire-header-container">
             <div class="empire-header-logo">
-                <img class="empire-header-logo__img"
-                    src="../assets/images/logo-empire-01.png"
-                    alt="Logo Empire">
+                <img class="empire-header-logo__img" src="../assets/images/logo-empire-01.png" alt="Logo Empire">
             </div>
             <nav class="empire-menu">
                 <ul class="empire-menu-nav">
                     <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link"
-                            href="../index.html">Home</a>
+                        <a class="empire-menu-nav__link" href="../index.html">Home</a>
                     </li>
                     <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link active"
-                            href="../pages/products.html">Productos</a>
+                        <a class="empire-menu-nav__link active" href="../pages/products.html">Productos</a>
                     </li>
                     <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link"
-                            href="../pages/blog.html">Blog</a>
+                        <a class="empire-menu-nav__link" href="../pages/blog.html">Blog</a>
                     </li>
                     <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link"
-                            href="../pages/about.html">Nosotros</a>
+                        <a class="empire-menu-nav__link" href="../pages/about.html">Nosotros</a>
                     </li>
                     <li class="empire-menu-nav__list">
-                        <a class="empire-menu-nav__link"
-                            href="../pages/contact.html">Contáctanos</a>
+                        <a class="empire-menu-nav__link" href="../pages/contact.html">Contáctanos</a>
                     </li>
+                    <!-- <li class="empire-menu-nav__list">
+                            <a class="empire-menu-nav__link" href="pages/pedidos.html">Pedidos</a>
+                        </li> -->
                 </ul>
             </nav>
             <div class="empire-menu-cart">
-                <a href=""
-                    class="empire-menu-cart__link">
-                    <img class="empire-menu-cart__img"
-                        src="../assets/images/icon-search.svg"
-                        alt="Icono Búsqueda">
+                <a href="" class="empire-menu-cart__link">
+                    <img class="empire-menu-cart__img" src="../assets/images/icon-search.svg" alt="Icono Búsqueda">
                 </a>
-                <a href=""
-                    class="empire-menu-cart__link">
-                    <img class="empire-menu-cart__img"
-                        src="../assets/images/icon-carrito.svg"
+
+
+                <a id="empire-cart" class="empire-menu-cart__link cart--number">
+                    <span id="empire-cart__number" class="empire-cart__number">3</span>
+                    <img class="empire-menu-cart__img" src="../assets/images/icon-carrito.svg"
                         alt="Icono Carrito de Compra">
+
+
+                    <div id="empire-cart-container" class="empire-cart-container">
+                        <!-- Productos en el carrito -->
+                        <section class="empire-details-content">
+                            <!-- Item 1 -->
+                            <div class="empire-details">
+                                <div class="empire-details-products">
+                                    <img class="empire-details-products__img"
+                                        src="../assets/images/products/laptops/01-macbook-air-15.png"
+                                        alt="MacBook Pro M2 MNEJ3 2022 LLA 13.3 inc">
+                                </div>
+                                <div class="empire-details-products-item">
+                                    <h3 class="empire-details-products-item__title">MacBook Pro M2 MNEJ3 2022 LLA 13.3
+                                        inch</h3>
+                                    <ul class="empire-details-products-item-list">
+                                        <li class="empire-details-products-item-list__item">
+                                            <span>Marca</span><strong>Apple</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="empire-details">
+                                <div class="empire-details-products">
+                                    <img class="empire-details-products__img"
+                                        src="../assets/images/products/laptops/01-macbook-air-15.png"
+                                        alt="MacBook Pro M2 MNEJ3 2022 LLA 13.3 inc">
+                                </div>
+                                <div class="empire-details-products-item">
+                                    <h3 class="empire-details-products-item__title">MacBook Pro M2 MNEJ3 2022 LLA 13.3
+                                        inch</h3>
+                                    <ul class="empire-details-products-item-list">
+                                        <li class="empire-details-products-item-list__item">
+                                            <span>Marca</span><strong>Apple</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="empire-details">
+                                <div class="empire-details-products">
+                                    <img class="empire-details-products__img"
+                                        src="../assets/images/products/laptops/01-macbook-air-15.png"
+                                        alt="MacBook Pro M2 MNEJ3 2022 LLA 13.3 inc">
+                                </div>
+                                <div class="empire-details-products-item">
+                                    <h3 class="empire-details-products-item__title">MacBook Pro M2 MNEJ3 2022 LLA 13.3
+                                        inch</h3>
+                                    <ul class="empire-details-products-item-list">
+                                        <li class="empire-details-products-item-list__item">
+                                            <span>Marca</span><strong>Apple</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Precio -->
+                        <section class="empire-details-price">
+                            <div class="empire-details-products-value">
+                                <h2 class="empire-details-products-value__price">$ 1.299</h2>
+                                <span class="empire-details-products-value__last-price">$ 1.699</span>
+                                <div class="empire-details-products-value-btn">
+                                    <a href="tarjeta.html">
+                                        <button class="empire-details-products-value-btn--add"> Ir a pagar</button>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
                 </a>
-                <a href="/pages/dashboard/index.html"
-                    class="empire-menu-cart__link">
-                    <img class="empire-menu-cart__img"
-                        src="../assets/images/icon-user.svg"
-                        alt="Icono Usuario">
+
+
+                <a id="empire-usuario" class="empire-menu-cart__link usuario">
+                    <img class="empire-menu-cart__img" src="../assets/images/icon-user.svg" alt="Icono Usuario">
                 </a>
+                <div id="empire-usuario-container" class="empire-usuario-container">
+                    <div class="empire-usuario-login">
+                        <label>Rut</label>
+                        <input class="empire-usuario-login-input" type="text" placeholder="12345678-9" required>
+                        <label>Contraseña</label>
+                        <input class="empire-usuario-login-input" type="password" placeholder="***********" required>
+                    </div>
+
+                    <a href="">¿Olvidaste la contraseña?</a>
+                    <a href="index.html">
+                        <button id="btn-Login" class="empire-btn-login">Iniciar sesión</button>
+                    </a>
+                    <a href="pages/registrarse.html">
+                        <button class="empire-btn-registro">Crear cuenta</button>
+                    </a>
+                </div>
+
+
             </div>
         </section>
-
     </header>
     <!-- Main Content -->
     <div class="empire-hero">
         <div class="empire-hero__link">
-            <img class="empire-hero__banner"
-                src="../assets/images/banner-products-desktop.jpg"
+            <img class="empire-hero__banner" src="../assets/images/banner-products-desktop.jpg"
                 alt="Imagen de productos en Empire">
         </div>
     </div>
     <main class="empire-main">
         <nav class="empire-breadcrumbs" aria-label="breadcrumb">
             <ol class="empire-breadcrumbs-list">
-                <li class="empire-breadcrumbs-list__item"><a class="empire-breadcrumbs-list__link" href="/">Home ></a></li>
-                <li class="empire-breadcrumbs-list__item"><a class="empire-breadcrumbs-list__link" href="/">Productos ></a></li>
+                <li class="empire-breadcrumbs-list__item"><a class="empire-breadcrumbs-list__link" href="/">Home ></a>
+                </li>
+                <li class="empire-breadcrumbs-list__item"><a class="empire-breadcrumbs-list__link" href="/">Productos
+                        ></a></li>
                 <li class="empire-breadcrumbs-list__item active" aria-current="page">Accesorios</li>
             </ol>
         </nav>
         <section class="empire-details">
             <div class="empire-details-products">
-                <img class="empire-details-products__img" src="../assets/images/products/laptops/01-macbook-air-15.png" alt="MacBook Pro M2 MNEJ3 2022 LLA 13.3 inc">
+                <img class="empire-details-products__img" src="../assets/images/products/laptops/01-macbook-air-15.png"
+                    alt="MacBook Pro M2 MNEJ3 2022 LLA 13.3 inc">
             </div>
             <div class="empire-details-products-item">
                 <h3 class="empire-details-products-item__title">MacBook Pro M2 MNEJ3 2022 LLA 13.3 inch</h3>
                 <ul class="empire-details-products-item-list">
                     <li class="empire-details-products-item-list__item"><span>Marca</span><strong>Apple</strong></li>
-                    <li class="empire-details-products-item-list__item"><span>Modelo</span><strong>Macbook Pro</strong></li>
-                    <li class="empire-details-products-item-list__item"><span>Pantalla</span><strong>13.3 "</strong></li>
-                    <li class="empire-details-products-item-list__item"><span>Disco Duro</span><strong>256 GB</strong></li>
-                    <li class="empire-details-products-item-list__item"><span>Modelo CPU</span><strong>Intel Core I5</strong></li>
+                    <li class="empire-details-products-item-list__item"><span>Modelo</span><strong>Macbook Pro</strong>
+                    </li>
+                    <li class="empire-details-products-item-list__item"><span>Pantalla</span><strong>13.3 "</strong>
+                    </li>
+                    <li class="empire-details-products-item-list__item"><span>Disco Duro</span><strong>256 GB</strong>
+                    </li>
+                    <li class="empire-details-products-item-list__item"><span>Modelo CPU</span><strong>Intel Core
+                            I5</strong></li>
                 </ul>
             </div>
             <div class="empire-details-products-value">
@@ -139,12 +215,12 @@
                     <a href="tarjeta.html">
                         <button class="empire-details-products-value-btn--add"> Comprar</button>
                     </a>
-                    
+
                     <!-- SIMULACION DE CARRITO DE COMPRAS -->
                     <a href="carrito.html">
                         <button class="empire-details-products-value-btn--cart"> Agregar al carrito</button>
                     </a>
-                    
+
                 </div>
 
             </div>
@@ -168,13 +244,17 @@
             <div class="empire-footer-info">
                 <h3 class="empire-footer-info__title">Contáctanos</h3>
                 <p class="empire-footer-info__desc">
-                    <img src="/assets/images/footer/footer-icon-location.svg" alt="Icon Location Footer"/>
-                    Mall Plaza del Trébol, Talcahuano</p>
-                <p class="empire-footer-info__desc"><img src="../assets/images/footer/footer-icon-email.svg" alt="Icon Email"> info@empire-electronics.cl</p>
-                <p class="empire-footer-info__desc"><img src="../assets/images/footer/footer-icon-phone.svg" alt="Icon Phone">+569 987654321</p>
+                    <img src="/assets/images/footer/footer-icon-location.svg" alt="Icon Location Footer" />
+                    Mall Plaza del Trébol, Talcahuano
+                </p>
+                <p class="empire-footer-info__desc"><img src="../assets/images/footer/footer-icon-email.svg"
+                        alt="Icon Email"> info@empire-electronics.cl</p>
+                <p class="empire-footer-info__desc"><img src="../assets/images/footer/footer-icon-phone.svg"
+                        alt="Icon Phone">+569 987654321</p>
             </div>
         </div>
 
     </footer>
 </body>
+
 </html>
