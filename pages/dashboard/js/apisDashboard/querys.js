@@ -2,14 +2,14 @@
 $(document).ready(function () {
     $.getJSON('https://mindicador.cl/api', function () {
 
-        console.log("esperando....");
+        console.log("CARGANDO....");
     }).fail(function () {
         $("#spin").hide();
         $("#spintext").hide();
 
         $("#dolar").removeClass("h5");
         $("#dolar").css("font-size", "10px");
-        $("#dolar").text("Error al cargar datos");
+        $("#dolar").text("ERROR AL CARGAR LOS DATOS");
 
     }).done(function (data) {
         $("#spin").hide();
@@ -18,9 +18,9 @@ $(document).ready(function () {
         $("#spintextuf").hide();
         $("#spinutm").hide();
         $("#spintextutm").hide();
-        $("#dolar").text("Valor dolar: $" + data.dolar.valor);
-        $("#uf").text("Valor UF: $" + data.uf.valor);
-        $("#utm").text("Valor UTM: $" + data.utm.valor);
+        $("#dolar").text("DOLAR: $" + data.dolar.valor);
+        $("#uf").text("UF: $" + data.uf.valor);
+        $("#utm").text("UTM: $" + data.utm.valor);
     });
 });
 
