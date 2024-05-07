@@ -1,7 +1,7 @@
 const products = [
-    new Product('A24', 'Smartphone','2','$10000', '0', 'proveedor 2', 'Smart', 'Samsung'),
-    new Product('Iphone 13', 'Smartphone','1','$13000', '0', 'proveedor 1', '13', 'Apple'),
-    new Product('Mouse bacan', 'Mouse','5','$12000', '0', 'proveedor 3', 'bacan', 'Fiddler')
+    new Product('A24', 'Smartphone','2','10000', '0', 'proveedor 2', 'Smart', 'Samsung'),
+    new Product('Iphone 13', 'Smartphone','1','13000', '0', 'proveedor 1', '13', 'Apple'),
+    new Product('Mouse bacan', 'Mouse','5','12000', '0', 'proveedor 3', 'bacan', 'Fiddler')
 ]
 
 function getProducts(){
@@ -15,7 +15,7 @@ function createProduct(nombre,categoria,unidades,precio,descuento,proveedor,mode
     return newProduct
 }
 
-function updateProduct(newNombre,newCategoria,newUnidades,newPrecio,newDescuento,newProveedor,newModelo,newMarca){
+function updateProduct(i, newNombre,newCategoria,newUnidades,newPrecio,newDescuento,newProveedor,newModelo,newMarca){
     users[i].nombre = newNombre
     users[i].categoria = newCategoria
     users[i].unidades = newUnidades

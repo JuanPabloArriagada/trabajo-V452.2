@@ -775,6 +775,17 @@ body {
 	}
 }
 
+	.formulario__input-error {
+		font-size: 12px;
+		margin-bottom: 0;
+		display: none;
+	}
+	.formulario__input-error-activo {
+		display: block;
+
+	}
+
+
 /*Tablet*/
 @media (min-width: 480px) and (max-width: 839px) {
 	.hide-on-tablet {
